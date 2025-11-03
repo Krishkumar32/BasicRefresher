@@ -6,19 +6,6 @@ print("Hello World")
 # ("Hello World") → the message/text we want to show
 # " " (quotes) → tells Python that it is text (string)
 
-✅ What is Python?
-Python is a popular, high-level programming language created by Guido van Rossum in 1991.
-It is simple, powerful, and widely used in technology.
-
-✅ Where is Python Used?
-Python is used for:
-Web development
-Software & application development
-Data science & big data
-Automation & scripting
-Machine learning & AI
-Database handling
-
 
 # ✅ What is Python?
 # Python is a popular, high-level programming language created by Guido van Rossum in 1991.
