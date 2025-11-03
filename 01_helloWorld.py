@@ -42,8 +42,5 @@ print("Hello World")
 # We use Python 3 (latest major version)
 # You can code Python in editors like VS Code, PyCharm, Thonny, etc.
 
-# ✅ Python Syntax (Simple Explanation)
-
-# Python uses indentation (spaces) to define blocks of code
-# No semicolons needed — each line ends a command
-# Looks clean and easy to read, like English
+# ✅ what is indentation in python ?
+# Indentation in Python means - adding spaces at the beginning of a line to define the code block and control program structure.
