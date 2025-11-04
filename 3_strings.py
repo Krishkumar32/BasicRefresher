@@ -46,6 +46,8 @@ s2 = "World"
 print(s1 == s2)
 
 #✅ Concatenate strings
+s1 = "Hello"
+s2 = "World"
 print(s1 + " " + s2)
 print(f"{s1} {s2}")   # formatted
 
