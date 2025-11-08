@@ -156,3 +156,299 @@ def insert_at_position(head, new_node, position):
 # ❌ Uses extra memory for pointers
 # ❌ No direct access (must traverse)
 # ❌ More complex to program than arrays
+
+
+
+# simple code for linklist:
+class Node:
+    
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+node1 = Node(10)
+node2 = Node(20)
+node3 = Node(30)
+node4 = Node(40)
+node5 = Node(50)
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+
+current =node1
+while current is not None :
+    print(current.data,end="->")
+    current = current.next
+    
+print("None")
+
+
+#code for travesing:
+class Node:
+    
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+node1 = Node(10)
+node2 = Node(20)
+node3 = Node(30)
+node4 = Node(40)
+node5 = Node(50)
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+
+
+head = node1
+current =head
+while current is not None :
+    print(current.data,end="->")
+    current = current.next
+    
+print("None")
+
+
+
+
+
+
+
+#insertion in linklist in beginning:
+class Node:
+    
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+    #creating new nodes
+node1 = Node(10)
+node2 = Node(20)
+node3 = Node(30)
+node4 = Node(40)
+node5 = Node(50)
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+ #adding a new node at the beginning
+head = node1
+new_node = Node(70)
+new_node.next = head
+head =new_node
+ #printing data
+current =head
+while current is not None :
+    print(current.data,end="->")
+    current = current.next
+    
+print("None")
+
+
+
+
+
+#insertion in linklist in end :
+class Node:
+    
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+    #creating new nodes
+node1 = Node(10)
+node2 = Node(20)
+node3 = Node(30)
+node4 = Node(40)
+node5 = Node(50)
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+ #adding a new node at the end
+new_node =Node(60)
+head =node1
+current = head
+while current.next is not None:
+    current = current.next
+current.next = new_node
+ #printing data
+current =head
+while current is not None :
+    print(current.data,end="->")
+    current = current.next
+    
+print("None")
+
+
+
+
+#insertion in linklist at specific position :
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+# creating new nodes
+node1 = Node(10)   
+node2 = Node(20)
+node3 = Node(30)
+node4 = Node(40)
+node5 = Node(50)
+
+# linking nodes
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+
+# adding a new node after 20
+new_node = Node(25)
+
+current = node1
+while current is not None:
+    if current.data == 20:
+        new_node.next = current.next
+        current.next = new_node
+        break
+    current = current.next
+
+# printing the data
+head = node1
+current = head
+while current is not None:
+    print(current.data, end="->")
+    current = current.next
+print("None")
+
+
+
+
+
+
+
+
+
+
+
+# deletion of linklist :
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+# creating new nodes
+node1 = Node(10)
+node2 = Node(20)
+node3 = Node(30)
+node4 = Node(40)
+node5 = Node(50)
+
+# linking the nodes
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+
+# define head of the list
+head = node1
+
+# delete the first node (move head to the next node)
+if head is not None:
+    head = head.next   # head now starts from 20
+
+# print the linked list after deletion
+current = head
+while current is not None:
+    print(current.data, end="->")
+    current = current.next
+print("None")
+
+
+
+
+# delete the last node :
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+# creating new nodes
+node1 = Node(10)
+node2 = Node(20)
+node3 = Node(30)
+node4 = Node(40)
+node5 = Node(50)
+
+# linking the nodes
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+
+# set head
+head = node1
+
+# delete the last node
+current = head
+while current.next.next is not None:
+    current = current.next
+current.next = None   # remove the last node (50)
+
+# print the updated list
+current = head
+while current is not None:
+    print(current.data, end="->")
+    current = current.next
+print("None")
+
+
+
+
+# delete the particular data:
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+# creating new nodes
+node1 = Node(10)
+node2 = Node(20)
+node3 = Node(30)
+node4 = Node(40)
+node5 = Node(50)
+
+# linking the nodes
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+
+# head of the linked list
+head = node1
+
+# delete node with data = 30
+current = head
+while current.next is not None:
+    if current.next.data == 30:
+        current.next = current.next.next
+        break
+    current = current.next
+
+# print the linked list
+current = head
+while current is not None:
+    print(current.data, end="->")
+    current = current.next
+print("None")
+
+
+
+
+
+
